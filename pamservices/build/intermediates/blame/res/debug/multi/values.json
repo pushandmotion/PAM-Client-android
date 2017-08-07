@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/heart/Myfiles/pam/pamservices/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+        "outputFile": "/Users/heart/Myfiles/Git/PAM-Client-android/pamservices/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
         "map": [
             {
                 "to": {
@@ -4039,7 +4039,7 @@
                     "endOffset": 34489
                 },
                 "from": {
-                    "file": "/Users/heart/Myfiles/pam/pamservices/src/main/res/values/strings.xml",
+                    "file": "/Users/heart/Myfiles/Git/PAM-Client-android/pamservices/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 1,
                         "startColumn": 4,

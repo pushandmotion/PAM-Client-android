@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/heart/Myfiles/pam/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+        "outputFile": "/Users/heart/Myfiles/Git/PAM-Client-android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
         "map": [
             {
                 "to": {
@@ -1396,7 +1396,7 @@
                     "endOffset": 6230
                 },
                 "from": {
-                    "file": "/Users/heart/Myfiles/pam/app/src/main/res/values/colors.xml",
+                    "file": "/Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/res/values/colors.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -1415,7 +1415,7 @@
                     "endOffset": 6277
                 },
                 "from": {
-                    "file": "/Users/heart/Myfiles/pam/app/src/main/res/values/colors.xml",
+                    "file": "/Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/res/values/colors.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -1434,7 +1434,7 @@
                     "endOffset": 6328
                 },
                 "from": {
-                    "file": "/Users/heart/Myfiles/pam/app/src/main/res/values/colors.xml",
+                    "file": "/Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/res/values/colors.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -4968,7 +4968,7 @@
                     "endOffset": 43773
                 },
                 "from": {
-                    "file": "/Users/heart/Myfiles/pam/app/src/main/res/values/strings.xml",
+                    "file": "/Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 1,
                         "startColumn": 4,
@@ -5102,7 +5102,7 @@
                     "endOffset": 44568
                 },
                 "from": {
-                    "file": "/Users/heart/Myfiles/pam/app/src/main/res/values/styles.xml",
+                    "file": "/Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/res/values/styles.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
