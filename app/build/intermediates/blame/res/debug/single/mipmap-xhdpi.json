@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/heart/Myfiles/pam/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
+        "source": "/Users/heart/Myfiles/pam/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/heart/Myfiles/pam/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher_round.png",
+        "source": "/Users/heart/Myfiles/pam/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    }
+]

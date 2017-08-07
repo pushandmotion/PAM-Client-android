@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/heart/.android/build-cache/d4e692b1de877718083032fc38fcc862c6192431/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/heart/Myfiles/pam/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5140b1b064f6b12f0680f9fa1ff1ee7c8cf4af11/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/heart/.android/build-cache/2ba509c1de6fd31ee3470030c2604e35766b3272/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/heart/Myfiles/pam/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_10a784088b5bc718fd77adf386a1e0ff55d6356f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/heart/Myfiles/pam/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/heart/Myfiles/pam/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_deae7bb397f402fbfe85aa0f941c300f3a8c010f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/heart/.android/build-cache/f5e16e2dc2d314ea3ee09fe46ab77177a0a6a587/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Users/heart/Myfiles/pam/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d2edacaacb654fa016d66bac75e44ffc99c26692/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/heart/.android/build-cache/3fbe334d53a0bcafc28cb68144b607f5ccc0f5f8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/heart/Myfiles/pam/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_69badeadedd91049338ee6c43cdf459d0556afce/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/heart/.android/build-cache/c3dc0f956e81bcf2cafc57e1db14c825a5ea3e4c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/heart/Myfiles/pam/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0d6e8f3d68edccea08d5951874b7fd4fb9c6ddf9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/heart/.android/build-cache/3bcfa6d022f30fce3ee4f9583572d40642d43190/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/heart/Myfiles/pam/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_eef00d2bea5d02610f07e80e8c9f76681e02d8a0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/heart/android-sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/heart/Myfiles/pam/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.1_7b155dd951a43364cfe8c4b64fe133b2dcc51fd1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/heart/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/Users/heart/Myfiles/pam/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.13.0_880075db4ad369b754942504e81900f553b1b61f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/heart/.android/build-cache/748b84ac87b48e9616e9df77a3da886db89f1d04/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Users/heart/Myfiles/pam/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b05df8becc3baa7e9130c402efc0ffe15402e7ea/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/heart/Myfiles/pam/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c6adbc65d34d1609548f0a7122dde894c18e5964">
+        <dex dex="/Users/heart/Myfiles/pam/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_d26688113580c9df712dec6ba2d14d9e95b5f82d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/heart/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.8.1/4d060ca3190df0eda4dc13415532a12e15ca5f11/okhttp-3.8.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="4d060ca3190df0eda4dc13415532a12e15ca5f11">
+        <dex dex="/Users/heart/Myfiles/pam/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.8.1_03e1c4a41e22418d4b89f13539f0a9611d607c1d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/heart/android-sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/heart/Myfiles/pam/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_190aa28209eefe3687cf5592c796f8b9290c8b54/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/heart/.android/build-cache/42d282145c718b3bf2cf48f1407b71681e6327e9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/heart/Myfiles/pam/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_528d83fd4aa1b83b9c701f60de2a7995257de16a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/heart/.android/build-cache/a0a66e43d989fd7a8ff729d3466c6af6e095a220/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/heart/Myfiles/pam/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_77aaa963da5f39f8d4fedb79cad8cb0c2c9e6ecb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/heart/.android/build-cache/497101ad9734ea9f3aa7d93cb656c9828dd08198/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Users/heart/Myfiles/pam/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fff8a3010738461a1f8fa87c6819e5937bd5e204/classes.dex" />
+    </item>
+
+</items>

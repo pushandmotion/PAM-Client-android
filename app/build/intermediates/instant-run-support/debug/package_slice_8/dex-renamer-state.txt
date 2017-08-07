@@ -1,0 +1,4 @@
+#Mon Aug 07 11:45:54 ICT 2017
+base.0=/Users/heart/Myfiles/pam/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8
+renamed.0=classes.dex
+file.0=/Users/heart/Myfiles/pam/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex

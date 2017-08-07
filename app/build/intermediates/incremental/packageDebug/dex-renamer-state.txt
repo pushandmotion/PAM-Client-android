@@ -1,0 +1,7 @@
+#Mon Aug 07 12:18:02 ICT 2017
+base.0=/Users/heart/Myfiles/pam/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_d26688113580c9df712dec6ba2d14d9e95b5f82d
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/heart/Myfiles/pam/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_deae7bb397f402fbfe85aa0f941c300f3a8c010f/classes.dex
+base.1=/Users/heart/Myfiles/pam/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_deae7bb397f402fbfe85aa0f941c300f3a8c010f
+file.0=/Users/heart/Myfiles/pam/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_d26688113580c9df712dec6ba2d14d9e95b5f82d/classes.dex
