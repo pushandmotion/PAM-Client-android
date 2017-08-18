@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/heart/Myfiles/Git/PAM-Client-android/pamservices/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v18/values-v18.xml",
+        "outputFile": "/Users/mac/Documents/GIT/PAM-Client-android/pamservices/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v18/values-v18.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 99
                 },
                 "from": {
-                    "file": "/Users/heart/.android/build-cache/748b84ac87b48e9616e9df77a3da886db89f1d04/output/res/values-v18/values-v18.xml",
+                    "file": "/Users/mac/.android/build-cache/a3036145a54675467235beff8e2a9f954ca548a5/output/res/values-v18/values-v18.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

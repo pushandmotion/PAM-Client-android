@@ -1,6 +1,9 @@
 package com.pushandmotion.pamservices;
 
+import android.content.Context;
+
 import com.pushandmotion.pamservices.core.PAMClient;
+import com.pushandmotion.pamservices.data.TrackingData;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,16 +14,35 @@ import java.util.List;
 
 public class PAM {
     private static PAMClient pam;
-    private static List<String> pendingList;
+    private static List<TrackingData> pendingList;
     private static boolean ready = false;
 
-    public static void init(String siteURL, String apiKey){
+
+
+    private static Context context;
+    private static TrackingData.Builder defaultTrackingDataBuilder;
+
+    public static TrackingData.Builder defaultTrackingData(){
+        if(defaultTrackingDataBuilder == null){
+            defaultTrackingDataBuilder = new TrackingData.Builder();
+        }
+        return defaultTrackingDataBuilder;
+    }
+
+
+    public static void init(Context c, String siteURL, String appID){
+
+        defaultTrackingData()
+                .setAppId(appID)
+                .setCounter(0);
+
+
+        context = c.getApplicationContext();
 
         pendingList = new ArrayList<>();
 
         pam = new PAMClient();
         pam.setSiteURL(siteURL);
-        pam.setApiKey(apiKey);
 
         pam.setListener(new PAMClient.PAMClientListener(){
             @Override
@@ -28,21 +50,22 @@ public class PAM {
                 ready = true;
 
                 while( pendingList.size() > 0) {
-                    String track = pendingList.get(0);
-                    trackPageView(track);
+                    TrackingData data = pendingList.get(0);
+                    trackPageView(null,data);
                     pendingList.remove(0);
                 }
 
             }
 
-            @Override
-            public void onStartFail(String message) {
-
-            }
-
         });
 
-        pam.start();
+        pam.start(appID);
+
+
+    }
+
+    public static Context getContext(){
+        return context;
     }
 
     public static boolean isReady() {
@@ -50,9 +73,25 @@ public class PAM {
     }
 
 
-    public static void trackPageView(String pageName){
-        if(!ready) pendingList.add(pageName);
-        pam.trackPageView(pageName);
+    public static void trackPageView(TrackingData data){
+        if(!ready) pendingList.add(data);
+        pam.trackPageView(data);
     }
+
+    public static void trackPageView(String pageName, TrackingData data){
+        data.page_title = pageName;
+        pam.trackPageView(data);
+    }
+
+    public static void trackPageView(String pageName){
+        TrackingData data = defaultTrackingData().clone().setPageTitle(pageName).build();
+        pam.trackPageView(data);
+    }
+
+    public static TrackingData.Builder createTackingDataBuilder() {
+        TrackingData.Builder builder = defaultTrackingData().clone();
+        return builder;
+    }
+
 
 }

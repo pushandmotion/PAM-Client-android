@@ -4,6 +4,9 @@ package com.pushandmotion.pamservices.core;
 
 import android.util.Log;
 
+import com.pushandmotion.pamservices.PAM;
+import com.pushandmotion.pamservices.data.TrackingData;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 import java.io.IOException;
@@ -24,14 +27,14 @@ public class PAMClient {
 
     private String siteURL;
     private PAMClientListener listener;
-    private String apiKey;
-    private String token;
+    private String updfh;
     private String eventServerURL;
     private OkHttpClient httpClient;
 
     private String TAG = "PAM Debug";
 
     private String tid;
+
 
     public PAMClient(){
         httpClient = new OkHttpClient();
@@ -49,18 +52,13 @@ public class PAMClient {
         this.listener = listener;
     }
 
-    public void setApiKey(String apiKey) {
-        this.apiKey = apiKey;
-    }
 
-    public void start() {
+    public void start(String appId) {
 
         FormBody.Builder formBuilder = new FormBody.Builder()
-            .add("apiKey", apiKey);
+            .add("apiKey", appId);
 
         String url = createSiteURL("init");
-
-        Log.d(TAG,"URL="+url);
 
         Request request = new Request.Builder()
                 .url( url )
@@ -70,7 +68,7 @@ public class PAMClient {
         httpClient.newCall(request).enqueue(new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
-                listener.onStartFail(e.getMessage());
+                //listener.onStartFail(e.getMessage());
             }
 
             @Override
@@ -78,11 +76,15 @@ public class PAMClient {
                 JSONObject data = null;
                 try {
                     data = new JSONObject(response.body().string());
-                    token = data.getString("token");
+                    updfh = data.getString("token");
                     eventServerURL =  data.getString("event_server");
+                    setEventServerURL(eventServerURL);
+
+                    PAM.defaultTrackingData().setUpdfh(updfh);
+
                     listener.onStart();
                 } catch (JSONException e) {
-                    listener.onStartFail(e.getMessage());
+                    //listener.onStartFail(e.getMessage());
                     e.printStackTrace();
                 }
 
@@ -91,11 +93,41 @@ public class PAMClient {
 
     }
 
-    public void trackPageView(String pageName){
+    public void trackPageView(TrackingData data){
 
         FormBody.Builder formBuilder = new FormBody.Builder()
-                .add("token", token)
-                .add("apiKey", apiKey);
+                .add("updfh", data.updfh)
+                .add("app_id", data.appId )
+                .add("page_language" , data.page_language )
+                .add("resolution",data.resolution)
+                .add("timezone_offset",data.timezone_offset.toString())
+                .add("platform", data.platform)
+                .add("do_not_track",data.do_not_track)
+                .add("adblock",data.adblock);
+
+
+        if(data.page_title != null){
+            formBuilder.add("page_title", data.page_title );
+        }
+
+        if(data.page_referrer != null){
+            formBuilder.add("page_referrer", data.page_referrer );
+        }
+
+        if(data.page_url != null){
+            formBuilder.add("page_url", data.page_url );
+        }
+
+        if(data.counter != null){
+            formBuilder.add("counter", data.counter.toString() );
+        }
+
+        if(data.mtc_id != null){
+            formBuilder.add("mtc_id", data.mtc_id );
+        }
+
+
+        formBuilder.add("fingerprint", data.getFingerPrint() );
 
         String url = createEventURL("track");
 
@@ -107,7 +139,7 @@ public class PAMClient {
         httpClient.newCall(request).enqueue(new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
-                listener.onStartFail(e.getMessage());
+
             }
 
             @Override
@@ -138,7 +170,6 @@ public class PAMClient {
 
     public interface PAMClientListener{
         void onStart();
-        void onStartFail(String message);
     }
 
 }
