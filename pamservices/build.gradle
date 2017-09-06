@@ -33,6 +33,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
+/*
 
 def libraryGroupId = 'pam.client.library'
 def libraryArtifactId = 'pamservices'
@@ -69,4 +70,4 @@ artifactory {
             publishPom = true
         }
     }
-}
+}*/

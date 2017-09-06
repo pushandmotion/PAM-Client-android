@@ -14,12 +14,10 @@ public class MainApplication extends Application{
     public void onCreate() {
         super.onCreate();
 
-        final String siteURL = "http://private-bec2e8-pamclient.apiary-mock.com/";
-        final String appID = "xxxxx";
+        final String appID = getResources().getString(R.string.pam_app_id);
+        final String PAM_URL = getResources().getString(R.string.pam_url);
 
-
-        PAM.init(this, siteURL, appID );
-
+        PAM.init(this, PAM_URL, appID );
 
     }
 }

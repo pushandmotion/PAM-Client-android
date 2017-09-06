@@ -32,6 +32,7 @@ public class TrackingData {
     public String adblock = "false";
     public String updfh = null;
     public String mtc_id = null;
+    public String sid = null;
 
     public String getFingerPrint(){
 
@@ -74,6 +75,7 @@ public class TrackingData {
         private String updfh = null;
         private String appId = null;
         private String mtc_id = null;
+        private String sid = null;
 
         public TrackingData build(){
             TrackingData data = new TrackingData();
@@ -83,6 +85,8 @@ public class TrackingData {
             data.page_url = page_url;
             data.counter = counter;
             data.appId = appId;
+            data.mtc_id = mtc_id;
+            data.sid = sid;
 
             if(resolution == null){
                 setResolutionFromDeviceScreen();
@@ -99,6 +103,7 @@ public class TrackingData {
         }
 
         public Builder clone(){
+
             return new Builder()
                     .setAppId(appId)
                     .setMtcId(mtc_id)
@@ -108,7 +113,9 @@ public class TrackingData {
                     .setPageReferrer(page_referrer)
                     .setPageUrl(page_url)
                     .setCounter(counter)
-                    .setResolution(resolution);
+                    .setResolution(resolution)
+                    .setMtcId(mtc_id)
+                    .setSid(sid);
         }
 
 
@@ -192,6 +199,10 @@ public class TrackingData {
             return  this;
         }
 
+        public Builder setSid(String sid) {
+            this.sid = sid;
+            return this;
+        }
     }
 
 }

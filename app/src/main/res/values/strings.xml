@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">pam</string>
+
+    <string name="pam_app_id">12d88f5e736441338172d6f934e33403</string>
+    <string name="pam_url">https://tescopam-internal.sitespad.com/</string>
+
+    <string name="mock_updfh">def50200c6ceedac60ec6e6b1de16eb3c54176bdd43790562531018c8de4e776e2cd5872a3f8dd8a87ec894d3d06ea7a9beb7ceca8907b9a4d28632a02ec711a5948fb84be495cffdf05e6b246c79629e49e12264cd2951b1e896f8de6a4b1cda11174c387f5167048e86babcf8b</string>
 </resources>

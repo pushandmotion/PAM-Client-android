@@ -2,9 +2,12 @@ package com.pushandmotion.pamservices.core;
 
 
 
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 
 import com.pushandmotion.pamservices.PAM;
+import com.pushandmotion.pamservices.data.PAMLocalDataBase;
 import com.pushandmotion.pamservices.data.TrackingData;
 
 import org.json.JSONException;
@@ -25,78 +28,28 @@ import okhttp3.Response;
 
 public class PAMClient {
 
-    private String siteURL;
     private PAMClientListener listener;
     private String updfh;
-    private String eventServerURL;
+    private String pamServerURL;
     private OkHttpClient httpClient;
 
     private String TAG = "PAM Debug";
-
-    private String tid;
-
 
     public PAMClient(){
         httpClient = new OkHttpClient();
     }
 
-    public void setSiteURL(String siteURL) {
-        this.siteURL = siteURL;
-    }
-
-    public void setEventServerURL(String eventServerURL) {
-        this.eventServerURL = eventServerURL;
+    public void setPAMUrl(String pamServerURL) {
+        this.pamServerURL = pamServerURL;
     }
 
     public void setListener(PAMClientListener listener) {
         this.listener = listener;
     }
 
-
-    public void start(String appId) {
-
-        FormBody.Builder formBuilder = new FormBody.Builder()
-            .add("apiKey", appId);
-
-        String url = createSiteURL("init");
-
-        Request request = new Request.Builder()
-                .url( url )
-                .post(formBuilder.build())
-                .build();
-
-        httpClient.newCall(request).enqueue(new Callback() {
-            @Override
-            public void onFailure(Call call, IOException e) {
-                //listener.onStartFail(e.getMessage());
-            }
-
-            @Override
-            public void onResponse(Call call, Response response) throws IOException {
-                JSONObject data = null;
-                try {
-                    data = new JSONObject(response.body().string());
-                    updfh = data.getString("token");
-                    eventServerURL =  data.getString("event_server");
-                    setEventServerURL(eventServerURL);
-
-                    PAM.defaultTrackingData().setUpdfh(updfh);
-
-                    listener.onStart();
-                } catch (JSONException e) {
-                    //listener.onStartFail(e.getMessage());
-                    e.printStackTrace();
-                }
-
-            }
-        });
-
-    }
-
     public void trackPageView(TrackingData data){
 
         FormBody.Builder formBuilder = new FormBody.Builder()
-                .add("updfh", data.updfh)
                 .add("app_id", data.appId )
                 .add("page_language" , data.page_language )
                 .add("resolution",data.resolution)
@@ -105,6 +58,9 @@ public class PAMClient {
                 .add("do_not_track",data.do_not_track)
                 .add("adblock",data.adblock);
 
+        if(data.updfh != null) {
+            formBuilder.add("updfh", data.updfh);
+        }
 
         if(data.page_title != null){
             formBuilder.add("page_title", data.page_title );
@@ -124,12 +80,19 @@ public class PAMClient {
 
         if(data.mtc_id != null){
             formBuilder.add("mtc_id", data.mtc_id );
+            Log.d("PAM","POST mtc_id = "+data.mtc_id );
+        }else{
+            Log.d("PAM","POST mtc_id = NULL");
         }
 
+        if(data.sid != null){
+            formBuilder.add("sid", data.sid );
+        }
 
         formBuilder.add("fingerprint", data.getFingerPrint() );
 
-        String url = createEventURL("track");
+
+        String url = createEventURL("/mtc/event");
 
         Request request = new Request.Builder()
                 .url( url )
@@ -148,28 +111,48 @@ public class PAMClient {
                 for (int i = 0, size = responseHeaders.size(); i < size; i++) {
                     Log.d(TAG, responseHeaders.name(i) + ": " + responseHeaders.value(i));
                 }
-                Log.d(TAG,response.body().string());
 
-                try {
-                    JSONObject body = new JSONObject(response.body().string());
-                    tid = body.getString("tid");
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
+
+                final String result = response.body().string();
+
+                Handler mainHandler = new Handler(Looper.getMainLooper());
+                Runnable myRunnable = new Runnable() {
+                    @Override
+                    public void run() {
+                        onTrackingSuccess(result);
+                    }
+                };
+                mainHandler.post(myRunnable);
 
             }
         });
     }
 
-    private String createEventURL(String url) {
-        return eventServerURL+url;
+    private void onTrackingSuccess(String result){
+
+        Log.d(TAG,result );
+
+        try {
+            JSONObject body = new JSONObject(result);
+            String mtc_id = body.getString("id");
+            String sid = body.getString("sid");
+
+            PAM.defaultTrackingData().setMtcId(mtc_id);
+            PAM.defaultTrackingData().setSid(sid);
+
+            PAMLocalDataBase.getInstance(PAM.getContext()).saveMtcID(mtc_id,sid);
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
     }
-    private String createSiteURL(String url) {
-        return siteURL+url;
+
+    private String createEventURL(String url) {
+        return pamServerURL+url;
     }
 
     public interface PAMClientListener{
-        void onStart();
+        //void onUpdateData(JSONObject data);
     }
 
 }

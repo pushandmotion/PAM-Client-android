@@ -3,6 +3,7 @@ package com.pushandmotion.pamservices;
 import android.content.Context;
 
 import com.pushandmotion.pamservices.core.PAMClient;
+import com.pushandmotion.pamservices.data.PAMLocalDataBase;
 import com.pushandmotion.pamservices.data.TrackingData;
 
 import java.util.ArrayList;
@@ -14,11 +15,6 @@ import java.util.List;
 
 public class PAM {
     private static PAMClient pam;
-    private static List<TrackingData> pendingList;
-    private static boolean ready = false;
-
-
-
     private static Context context;
     private static TrackingData.Builder defaultTrackingDataBuilder;
 
@@ -29,53 +25,51 @@ public class PAM {
         return defaultTrackingDataBuilder;
     }
 
-
-    public static void init(Context c, String siteURL, String appID){
+    public static void init(Context c, String pamURL, String appID){
 
         defaultTrackingData()
                 .setAppId(appID)
                 .setCounter(0);
 
+        String updfh = PAMLocalDataBase.getInstance(c).getUPDFH();
+        String mtc_id = PAMLocalDataBase.getInstance(c).getMtcID();
+        String sid = PAMLocalDataBase.getInstance(c).getSID();
+
+        if(updfh != null){
+            defaultTrackingData().setUpdfh(updfh);
+        }
+
+        if(mtc_id != null){
+            defaultTrackingData().setMtcId(mtc_id);
+        }
+
+        if(sid != null){
+            defaultTrackingData().setSid(sid);
+        }
 
         context = c.getApplicationContext();
-
-        pendingList = new ArrayList<>();
-
         pam = new PAMClient();
-        pam.setSiteURL(siteURL);
+        pam.setPAMUrl(pamURL);
 
         pam.setListener(new PAMClient.PAMClientListener(){
-            @Override
-            public void onStart(){
-                ready = true;
-
-                while( pendingList.size() > 0) {
-                    TrackingData data = pendingList.get(0);
-                    trackPageView(null,data);
-                    pendingList.remove(0);
-                }
-
-            }
 
         });
 
-        pam.start(appID);
-
-
     }
+
+
 
     public static Context getContext(){
         return context;
     }
 
-    public static boolean isReady() {
-        return ready;
-    }
-
-
     public static void trackPageView(TrackingData data){
-        if(!ready) pendingList.add(data);
         pam.trackPageView(data);
+    }
+    public static void trackUpdfh(String updfh){
+        PAMLocalDataBase.getInstance(context).saveUPDFH(updfh);
+        defaultTrackingData().setUpdfh(updfh);
+        trackPageView("updfh");
     }
 
     public static void trackPageView(String pageName, TrackingData data){

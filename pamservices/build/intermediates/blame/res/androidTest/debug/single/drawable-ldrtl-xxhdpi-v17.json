@@ -1,11 +1,23 @@
 [
     {
+        "merged": "/Users/heart/Myfiles/Git/PAM-Client-android/pamservices/build/intermediates/res/merged/androidTest/debug/drawable-ldrtl-xxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png",
+        "source": "/Users/heart/.android/build-cache/748b84ac87b48e9616e9df77a3da886db89f1d04/output/res/drawable-ldrtl-xxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
         "merged": "/Users/mac/Documents/GIT/PAM-Client-android/pamservices/build/intermediates/res/merged/androidTest/debug/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png",
         "source": "/Users/mac/.android/build-cache/a3036145a54675467235beff8e2a9f954ca548a5/output/res/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "/Users/mac/Documents/GIT/PAM-Client-android/pamservices/build/intermediates/res/merged/androidTest/debug/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png",
         "source": "/Users/mac/.android/build-cache/a3036145a54675467235beff8e2a9f954ca548a5/output/res/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/heart/Myfiles/Git/PAM-Client-android/pamservices/build/intermediates/res/merged/androidTest/debug/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "/Users/heart/.android/build-cache/748b84ac87b48e9616e9df77a3da886db89f1d04/output/res/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/heart/Myfiles/Git/PAM-Client-android/pamservices/build/intermediates/res/merged/androidTest/debug/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "/Users/heart/.android/build-cache/748b84ac87b48e9616e9df77a3da886db89f1d04/output/res/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "/Users/mac/Documents/GIT/PAM-Client-android/pamservices/build/intermediates/res/merged/androidTest/debug/drawable-ldrtl-xxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png",

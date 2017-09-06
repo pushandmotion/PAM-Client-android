@@ -1,99 +1,99 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/mac/Documents/GIT/PAM-Client-android/app/src/main/AndroidManifest.xml:2:1-22:12
+ADDED from /Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/AndroidManifest.xml:2:1-22:12
 	package
-		ADDED from /Users/mac/Documents/GIT/PAM-Client-android/app/src/main/AndroidManifest.xml:3:5-36
-		INJECTED from /Users/mac/Documents/GIT/PAM-Client-android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/mac/Documents/GIT/PAM-Client-android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/AndroidManifest.xml:3:5-36
+		INJECTED from /Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/mac/Documents/GIT/PAM-Client-android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/mac/Documents/GIT/PAM-Client-android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/mac/Documents/GIT/PAM-Client-android/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from /Users/mac/Documents/GIT/PAM-Client-android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/mac/Documents/GIT/PAM-Client-android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/AndroidManifest.xml
 application
-ADDED from /Users/mac/Documents/GIT/PAM-Client-android/app/src/main/AndroidManifest.xml:5:5-20:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/mac/.android/build-cache/70a19fb5b4cbdae53c7976f9a06fae001925c677/output/AndroidManifest.xml:9:5-20
-MERGED from [PAM-Client-android:pamservices:unspecified] /Users/mac/Documents/GIT/PAM-Client-android/pamservices/build/intermediates/bundles/default/AndroidManifest.xml:14:5-18:19
-MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/mac/.android/build-cache/a3036145a54675467235beff8e2a9f954ca548a5/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-v4:25.3.1] /Users/mac/.android/build-cache/f0785aa4a419286a06c1955cc1fa592955b2363d/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:25.3.1] /Users/mac/.android/build-cache/cfd5426b78cc4d556d657a6a88c538719e62c92b/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:25.3.1] /Users/mac/.android/build-cache/736ee207b65e5524111d79c863b5db1d57c73aaa/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:25.3.1] /Users/mac/.android/build-cache/8e6aa1968d11a80cb629c582471f6c3b325950eb/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:25.3.1] /Users/mac/.android/build-cache/1852ce7dfebbe1537a24ac76a5d920490b43c21f/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/mac/.android/build-cache/981d94c51c4bdea78de5d03e5651cd0afb8b6ac9/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/mac/.android/build-cache/963e60ffa9953d4fc7beba30e7e422e895e152e9/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-compat:25.3.1] /Users/mac/.android/build-cache/7ec3b0c8c49c1b5ce5ab0e909b625802263699f6/output/AndroidManifest.xml:29:5-20
+ADDED from /Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/AndroidManifest.xml:5:5-20:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/heart/.android/build-cache/3fbe334d53a0bcafc28cb68144b607f5ccc0f5f8/output/AndroidManifest.xml:9:5-20
+MERGED from [PAM-Client-android:pamservices:unspecified] /Users/heart/Myfiles/Git/PAM-Client-android/pamservices/build/intermediates/bundles/default/AndroidManifest.xml:14:5-18:19
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/heart/.android/build-cache/748b84ac87b48e9616e9df77a3da886db89f1d04/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] /Users/heart/.android/build-cache/c3dc0f956e81bcf2cafc57e1db14c825a5ea3e4c/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/heart/.android/build-cache/42d282145c718b3bf2cf48f1407b71681e6327e9/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/heart/.android/build-cache/d4e692b1de877718083032fc38fcc862c6192431/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/heart/.android/build-cache/2ba509c1de6fd31ee3470030c2604e35766b3272/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/heart/.android/build-cache/3bcfa6d022f30fce3ee4f9583572d40642d43190/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/heart/.android/build-cache/497101ad9734ea9f3aa7d93cb656c9828dd08198/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/heart/.android/build-cache/f5e16e2dc2d314ea3ee09fe46ab77177a0a6a587/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /Users/heart/.android/build-cache/a0a66e43d989fd7a8ff729d3466c6af6e095a220/output/AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from /Users/mac/Documents/GIT/PAM-Client-android/app/src/main/AndroidManifest.xml:9:9-41
+		ADDED from /Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/AndroidManifest.xml:9:9-41
 	android:supportsRtl
-		ADDED from /Users/mac/Documents/GIT/PAM-Client-android/app/src/main/AndroidManifest.xml:11:9-35
+		ADDED from /Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/AndroidManifest.xml:11:9-35
 	android:roundIcon
-		ADDED from /Users/mac/Documents/GIT/PAM-Client-android/app/src/main/AndroidManifest.xml:10:9-54
+		ADDED from /Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/AndroidManifest.xml:10:9-54
 	android:allowBackup
-		ADDED from /Users/mac/Documents/GIT/PAM-Client-android/app/src/main/AndroidManifest.xml:7:9-35
+		ADDED from /Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/AndroidManifest.xml:7:9-35
 	android:icon
-		ADDED from /Users/mac/Documents/GIT/PAM-Client-android/app/src/main/AndroidManifest.xml:8:9-43
+		ADDED from /Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/AndroidManifest.xml:8:9-43
 	android:theme
-		ADDED from /Users/mac/Documents/GIT/PAM-Client-android/app/src/main/AndroidManifest.xml:12:9-40
+		ADDED from /Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/AndroidManifest.xml:12:9-40
 	android:name
-		ADDED from /Users/mac/Documents/GIT/PAM-Client-android/app/src/main/AndroidManifest.xml:6:9-40
+		ADDED from /Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/AndroidManifest.xml:6:9-40
 activity#com.pushandmotion.pam.MainActivity
-ADDED from /Users/mac/Documents/GIT/PAM-Client-android/app/src/main/AndroidManifest.xml:13:9-19:20
+ADDED from /Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/AndroidManifest.xml:13:9-19:20
 	android:name
-		ADDED from /Users/mac/Documents/GIT/PAM-Client-android/app/src/main/AndroidManifest.xml:13:19-47
+		ADDED from /Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/AndroidManifest.xml:13:19-47
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/mac/Documents/GIT/PAM-Client-android/app/src/main/AndroidManifest.xml:14:13-18:29
+ADDED from /Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/AndroidManifest.xml:14:13-18:29
 action#android.intent.action.MAIN
-ADDED from /Users/mac/Documents/GIT/PAM-Client-android/app/src/main/AndroidManifest.xml:15:17-69
+ADDED from /Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/AndroidManifest.xml:15:17-69
 	android:name
-		ADDED from /Users/mac/Documents/GIT/PAM-Client-android/app/src/main/AndroidManifest.xml:15:25-66
+		ADDED from /Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/AndroidManifest.xml:15:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/mac/Documents/GIT/PAM-Client-android/app/src/main/AndroidManifest.xml:17:17-77
+ADDED from /Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/AndroidManifest.xml:17:17-77
 	android:name
-		ADDED from /Users/mac/Documents/GIT/PAM-Client-android/app/src/main/AndroidManifest.xml:17:27-74
+		ADDED from /Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/AndroidManifest.xml:17:27-74
 uses-sdk
-INJECTED from /Users/mac/Documents/GIT/PAM-Client-android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/mac/.android/build-cache/70a19fb5b4cbdae53c7976f9a06fae001925c677/output/AndroidManifest.xml:5:5-7:41
-MERGED from [PAM-Client-android:pamservices:unspecified] /Users/mac/Documents/GIT/PAM-Client-android/pamservices/build/intermediates/bundles/default/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/mac/.android/build-cache/a3036145a54675467235beff8e2a9f954ca548a5/output/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-v4:25.3.1] /Users/mac/.android/build-cache/f0785aa4a419286a06c1955cc1fa592955b2363d/output/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.3.1] /Users/mac/.android/build-cache/cfd5426b78cc4d556d657a6a88c538719e62c92b/output/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.3.1] /Users/mac/.android/build-cache/736ee207b65e5524111d79c863b5db1d57c73aaa/output/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.3.1] /Users/mac/.android/build-cache/8e6aa1968d11a80cb629c582471f6c3b325950eb/output/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.3.1] /Users/mac/.android/build-cache/1852ce7dfebbe1537a24ac76a5d920490b43c21f/output/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/mac/.android/build-cache/981d94c51c4bdea78de5d03e5651cd0afb8b6ac9/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/mac/.android/build-cache/963e60ffa9953d4fc7beba30e7e422e895e152e9/output/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-compat:25.3.1] /Users/mac/.android/build-cache/7ec3b0c8c49c1b5ce5ab0e909b625802263699f6/output/AndroidManifest.xml:21:5-23:58
+INJECTED from /Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/heart/.android/build-cache/3fbe334d53a0bcafc28cb68144b607f5ccc0f5f8/output/AndroidManifest.xml:5:5-7:41
+MERGED from [PAM-Client-android:pamservices:unspecified] /Users/heart/Myfiles/Git/PAM-Client-android/pamservices/build/intermediates/bundles/default/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/heart/.android/build-cache/748b84ac87b48e9616e9df77a3da886db89f1d04/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.3.1] /Users/heart/.android/build-cache/c3dc0f956e81bcf2cafc57e1db14c825a5ea3e4c/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/heart/.android/build-cache/42d282145c718b3bf2cf48f1407b71681e6327e9/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/heart/.android/build-cache/d4e692b1de877718083032fc38fcc862c6192431/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/heart/.android/build-cache/2ba509c1de6fd31ee3470030c2604e35766b3272/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/heart/.android/build-cache/3bcfa6d022f30fce3ee4f9583572d40642d43190/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/heart/.android/build-cache/497101ad9734ea9f3aa7d93cb656c9828dd08198/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/heart/.android/build-cache/f5e16e2dc2d314ea3ee09fe46ab77177a0a6a587/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-compat:25.3.1] /Users/heart/.android/build-cache/a0a66e43d989fd7a8ff729d3466c6af6e095a220/output/AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/mac/.android/build-cache/a3036145a54675467235beff8e2a9f954ca548a5/output/AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/heart/.android/build-cache/748b84ac87b48e9616e9df77a3da886db89f1d04/output/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		INJECTED from /Users/mac/Documents/GIT/PAM-Client-android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/mac/Documents/GIT/PAM-Client-android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/mac/Documents/GIT/PAM-Client-android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/mac/Documents/GIT/PAM-Client-android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/heart/Myfiles/Git/PAM-Client-android/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from [PAM-Client-android:pamservices:unspecified] /Users/mac/Documents/GIT/PAM-Client-android/pamservices/build/intermediates/bundles/default/AndroidManifest.xml:11:5-67
+ADDED from [PAM-Client-android:pamservices:unspecified] /Users/heart/Myfiles/Git/PAM-Client-android/pamservices/build/intermediates/bundles/default/AndroidManifest.xml:11:5-67
 	android:name
-		ADDED from [PAM-Client-android:pamservices:unspecified] /Users/mac/Documents/GIT/PAM-Client-android/pamservices/build/intermediates/bundles/default/AndroidManifest.xml:11:22-64
+		ADDED from [PAM-Client-android:pamservices:unspecified] /Users/heart/Myfiles/Git/PAM-Client-android/pamservices/build/intermediates/bundles/default/AndroidManifest.xml:11:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [PAM-Client-android:pamservices:unspecified] /Users/mac/Documents/GIT/PAM-Client-android/pamservices/build/intermediates/bundles/default/AndroidManifest.xml:12:5-79
+ADDED from [PAM-Client-android:pamservices:unspecified] /Users/heart/Myfiles/Git/PAM-Client-android/pamservices/build/intermediates/bundles/default/AndroidManifest.xml:12:5-79
 	android:name
-		ADDED from [PAM-Client-android:pamservices:unspecified] /Users/mac/Documents/GIT/PAM-Client-android/pamservices/build/intermediates/bundles/default/AndroidManifest.xml:12:22-76
+		ADDED from [PAM-Client-android:pamservices:unspecified] /Users/heart/Myfiles/Git/PAM-Client-android/pamservices/build/intermediates/bundles/default/AndroidManifest.xml:12:22-76
 meta-data#android.support.VERSION
-ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/mac/.android/build-cache/a3036145a54675467235beff8e2a9f954ca548a5/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-v4:25.3.1] /Users/mac/.android/build-cache/f0785aa4a419286a06c1955cc1fa592955b2363d/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-fragment:25.3.1] /Users/mac/.android/build-cache/cfd5426b78cc4d556d657a6a88c538719e62c92b/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-media-compat:25.3.1] /Users/mac/.android/build-cache/736ee207b65e5524111d79c863b5db1d57c73aaa/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-ui:25.3.1] /Users/mac/.android/build-cache/8e6aa1968d11a80cb629c582471f6c3b325950eb/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-utils:25.3.1] /Users/mac/.android/build-cache/1852ce7dfebbe1537a24ac76a5d920490b43c21f/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/mac/.android/build-cache/981d94c51c4bdea78de5d03e5651cd0afb8b6ac9/output/AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/mac/.android/build-cache/963e60ffa9953d4fc7beba30e7e422e895e152e9/output/AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-compat:25.3.1] /Users/mac/.android/build-cache/7ec3b0c8c49c1b5ce5ab0e909b625802263699f6/output/AndroidManifest.xml:25:5-27:34
+ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/heart/.android/build-cache/748b84ac87b48e9616e9df77a3da886db89f1d04/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] /Users/heart/.android/build-cache/c3dc0f956e81bcf2cafc57e1db14c825a5ea3e4c/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/heart/.android/build-cache/42d282145c718b3bf2cf48f1407b71681e6327e9/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/heart/.android/build-cache/d4e692b1de877718083032fc38fcc862c6192431/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/heart/.android/build-cache/2ba509c1de6fd31ee3470030c2604e35766b3272/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/heart/.android/build-cache/3bcfa6d022f30fce3ee4f9583572d40642d43190/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/heart/.android/build-cache/497101ad9734ea9f3aa7d93cb656c9828dd08198/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/heart/.android/build-cache/f5e16e2dc2d314ea3ee09fe46ab77177a0a6a587/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-compat:25.3.1] /Users/heart/.android/build-cache/a0a66e43d989fd7a8ff729d3466c6af6e095a220/output/AndroidManifest.xml:25:5-27:34
 	android:value
-		ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/mac/.android/build-cache/a3036145a54675467235beff8e2a9f954ca548a5/output/AndroidManifest.xml:27:9-31
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/heart/.android/build-cache/748b84ac87b48e9616e9df77a3da886db89f1d04/output/AndroidManifest.xml:27:9-31
 	android:name
-		ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/mac/.android/build-cache/a3036145a54675467235beff8e2a9f954ca548a5/output/AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/heart/.android/build-cache/748b84ac87b48e9616e9df77a3da886db89f1d04/output/AndroidManifest.xml:26:9-47
