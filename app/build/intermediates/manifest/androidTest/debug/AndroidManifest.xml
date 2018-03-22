@@ -13,7 +13,7 @@
         android:label="Tests for com.pushandmotion.pam"
         android:targetPackage="com.pushandmotion.pam" />
 
-    <application>
+    <application android:debuggable="true" >
         <uses-library android:name="android.test.runner" />
     </application>
 

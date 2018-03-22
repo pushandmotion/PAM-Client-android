@@ -8,6 +8,7 @@ import com.pushandmotion.pamservices.data.TrackingData;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by heart on 8/7/2017 AD.
@@ -87,5 +88,9 @@ public class PAM {
         return builder;
     }
 
+    public static void trackCustomField(Map<String,String> cuttomFields){
+        TrackingData data = defaultTrackingData().clone().setPageTitle("custom field").build();
+        pam.trackPageView(data, cuttomFields);
+    }
 
 }

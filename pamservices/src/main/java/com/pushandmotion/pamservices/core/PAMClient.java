@@ -13,6 +13,9 @@ import com.pushandmotion.pamservices.data.TrackingData;
 import org.json.JSONException;
 import org.json.JSONObject;
 import java.io.IOException;
+import java.util.Iterator;
+import java.util.Map;
+
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.FormBody;
@@ -48,6 +51,10 @@ public class PAMClient {
     }
 
     public void trackPageView(TrackingData data){
+        trackPageView(data,null);
+    }
+
+    public void trackPageView(TrackingData data, Map<String,String> cuttomFields){
 
         FormBody.Builder formBuilder = new FormBody.Builder()
                 .add("app_id", data.appId )
@@ -57,6 +64,15 @@ public class PAMClient {
                 .add("platform", data.platform)
                 .add("do_not_track",data.do_not_track)
                 .add("adblock",data.adblock);
+
+        if( cuttomFields != null ){
+            Iterator it = cuttomFields.entrySet().iterator();
+            while (it.hasNext()) {
+                Map.Entry pair = (Map.Entry)it.next();
+                formBuilder.add(pair.getKey().toString(),  pair.getValue().toString() );
+                it.remove();
+            }
+        }
 
         if(data.updfh != null) {
             formBuilder.add("updfh", data.updfh);
