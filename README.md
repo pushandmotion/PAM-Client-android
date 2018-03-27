@@ -33,23 +33,24 @@ Clien SDK to access PAM
 ### Init PAM Client
 
  1. initialize PAM client in MainApplication.java
- ```java
- import com.pushandmotion.pamservices.*;
- ```
  
     ```java
-    public class MainApplication extends Application{
-        @Override
-        public void onCreate() {
-            super.onCreate();
+     import com.pushandmotion.pamservices.*;
+    ```
+ 
+    ```java
+     public class MainApplication extends Application{
+         @Override
+         public void onCreate() {
+             super.onCreate();
 
-            String PAM_APP_ID = "123456";
-        String PAM_SERVER = "http://pam--------.com";
+             String PAM_APP_ID = "123456";
+         String PAM_SERVER = "http://pam--------.com";
 
-        PAM.initPam(this, PAM_SERVER, PAM_APP_ID );
+         PAM.initPam(this, PAM_SERVER, PAM_APP_ID );
 
-        }
-    }   
+         }
+     }   
     ```
     
  1. Tracking your Activity pageview 
@@ -59,6 +60,7 @@ Clien SDK to access PAM
     ```java
      import com.pushandmotion.pamservices.*;
     ```
+   
    
     ```java
     @Override
