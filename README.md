@@ -35,10 +35,27 @@ Clien SDK to access PAM
  1. initialize PAM client in MainApplication.java
  
     ```java
-    String PAM_APP_ID = "123456";
+ package;
+
+import android.app.Application;
+
+import com.pushandmotion.pamservices.*;
+
+public class MainApplication extends Application{
+    @Override
+    public void onCreate() {
+        super.onCreate();
+
+        String PAM_APP_ID = "123456";
     String PAM_SERVER = "http://pam--------.com";
 
     PAM.initPam(this, PAM_SERVER, PAM_APP_ID );
+
+    }
+}
+
+
+    
     ```
     
  1. Tracking your Activity pageview 
