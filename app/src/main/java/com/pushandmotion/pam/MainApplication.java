@@ -17,7 +17,7 @@ public class MainApplication extends Application{
         final String appID = getResources().getString(R.string.pam_app_id);
         final String PAM_URL = getResources().getString(R.string.pam_url);
 
-        PAM.init(this, PAM_URL, appID );
+        PAM.initPam(this, PAM_URL, appID );
 
     }
 }

@@ -26,7 +26,7 @@ public class PAM {
         return defaultTrackingDataBuilder;
     }
 
-    public static void init(Context c, String pamURL, String appID){
+    public static void initPam(Context c, String pamURL, String appID){
 
         defaultTrackingData()
                 .setAppId(appID)
