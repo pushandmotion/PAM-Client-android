@@ -45,9 +45,9 @@ Clien SDK to access PAM
              super.onCreate();
 
              String PAM_APP_ID = "123456";
-         String PAM_SERVER = "http://pam--------.com";
+             String PAM_SERVER = "http://pam--------.com";
 
-         PAM.initPam(this, PAM_SERVER, PAM_APP_ID );
+             PAM.initPam(this, PAM_SERVER, PAM_APP_ID );
 
          }
      }   
@@ -93,11 +93,11 @@ Clien SDK to access PAM
   
  1. If you want to tracking Pam encrypting data ( also called as "UPDFH" ) you can using the code below.
  
- ```java
+    ```java
      import com.pushandmotion.pamservices.*;
     ```
      
     ```java
-     PAM.trackUpdfh( updfhString );
+      PAM.trackUpdfh( updfhString );
     ```
  
