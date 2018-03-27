@@ -77,7 +77,7 @@ Clien SDK to access PAM
     }
     ```
   
- 1. If you need to tracking the custom data field you can using the code below.
+ 1. If you want to tracking the custom data field you can using the code below.
  
     ```java
      import java.util.Map;
@@ -90,4 +90,14 @@ Clien SDK to access PAM
      customField.put("line_id" , "customerLineID");
      PAM.trackCustomField(customField);
     ```
+  
+ 1. If you want to tracking Pam encrypting data ( also called as "UPDFH" ) you can using the code below.
+ 
+ ```java
+     import com.pushandmotion.pamservices.*;
+    ```
      
+    ```java
+     PAM.trackUpdfh( updfhString );
+    ```
+ 
