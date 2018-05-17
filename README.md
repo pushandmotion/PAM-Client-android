@@ -28,11 +28,8 @@ Clien SDK to access PAM
  
  ![add pamservice to module dependency](https://raw.githubusercontent.com/pushandmotion/PAM-Client-android/master/readme_image/dependency.png)
  
-## Usage
 
-### Init PAM Client
-
- 1. initialize PAM client in MainApplication.java
+## initialize PAM client in MainApplication.java
  
     ```java
      import com.pushandmotion.pamservices.*;
@@ -53,7 +50,7 @@ Clien SDK to access PAM
      }   
     ```
     
- 1. Tracking your Activity pageview 
+## Tracking your Activity pageview 
  
     MainActivity.java
     
@@ -76,9 +73,10 @@ Clien SDK to access PAM
         PAM.trackPageView(pageName, data);
     }
     ```
-    
-1. Make Form Submit
-When you receive form submission from your website, you can forward those form data to PAM by calling submitForm method
+
+## Make Form Submit. 
+
+### When you receive form submission from your app, you can forward those form data to PAM by calling submitForm method
 
     ```java
      import com.pushandmotion.pamservices.PAM;
@@ -94,28 +92,3 @@ When you receive form submission from your website, you can forward those form d
 
      PAM.submitForm(form);
     ```
-
- 1. If you want to tracking the custom data field you can using the code below.
- 
-    ```java
-     import java.util.Map;
-     import com.pushandmotion.pamservices.*;
-    ```
-     
-    ```java
-     Map<String,String> customField = new HashMap<>();
-     customField.put("email" , "customerEmail@gmail.com");
-     customField.put("line_id" , "customerLineID");
-     PAM.trackCustomField(customField);
-    ```
-  
- 1. If you want to tracking Pam encrypting data ( also called as "UPDFH" ) you can using the code below.
- 
-    ```java
-     import com.pushandmotion.pamservices.*;
-    ```
-     
-    ```java
-      PAM.trackUpdfh( updfhString );
-    ```
- 
