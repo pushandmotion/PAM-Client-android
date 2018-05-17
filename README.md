@@ -31,64 +31,64 @@ Clien SDK to access PAM
 
 ## initialize PAM client in MainApplication.java
  
-    ```java
-     import com.pushandmotion.pamservices.*;
-    ```
+```java
+ import com.pushandmotion.pamservices.*;
+```
  
-    ```java
-     public class MainApplication extends Application{
-         @Override
-         public void onCreate() {
-             super.onCreate();
+```java
+ public class MainApplication extends Application{
+     @Override
+     public void onCreate() {
+         super.onCreate();
 
-             String PAM_APP_ID = "123456";
-             String PAM_SERVER = "http://pam--------.com";
+         String PAM_APP_ID = "123456";
+         String PAM_SERVER = "http://pam--------.com";
 
-             PAM.initPam(this, PAM_SERVER, PAM_APP_ID );
+         PAM.initPam(this, PAM_SERVER, PAM_APP_ID );
 
-         }
-     }   
-    ```
+     }
+ }   
+```
     
 ## Tracking your Activity pageview 
  
-    MainActivity.java
+MainActivity.java
     
-    ```java
-     import com.pushandmotion.pamservices.*;
-    ```
-   
-   
-    ```java
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+```java
+ import com.pushandmotion.pamservices.*;
+```
 
-        TrackingData data = PAM.createTackingDataBuilder()
-                .setPageUrl("appscheme://myscheme/home")
-                .build();
-        
-        String pageName = "home";
-        PAM.trackPageView(pageName, data);
-    }
-    ```
+
+```java
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+
+    TrackingData data = PAM.createTackingDataBuilder()
+            .setPageUrl("appscheme://myscheme/home")
+            .build();
+    
+    String pageName = "home";
+    PAM.trackPageView(pageName, data);
+}
+```
 
 ## Make Form Submit. 
 
 ### When you receive form submission from your app, you can forward those form data to PAM by calling submitForm method
 
-    ```java
-     import com.pushandmotion.pamservices.PAM;
-     import com.pushandmotion.pamservices.data.Form;
-    ```
+```java
+ import com.pushandmotion.pamservices.PAM;
+ import com.pushandmotion.pamservices.data.Form;
+```
 
-    ```java
-     String formId = "1234";
-     Form form = new Form(formId);
+```java
+ String formId = "1234";
+ Form form = new Form(formId);
 
-     form.add("email" , "customerEmail@gmail.com");
-     form.add("line_id" , "customerLineID");
+ form.add("email" , "customerEmail@gmail.com");
+ form.add("line_id" , "customerLineID");
 
-     PAM.submitForm(form);
-    ```
+ PAM.submitForm(form);
+```
