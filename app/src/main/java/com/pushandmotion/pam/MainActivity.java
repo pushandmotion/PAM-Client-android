@@ -10,9 +10,6 @@ import com.pushandmotion.pamservices.PAM;
 import com.pushandmotion.pamservices.data.Form;
 import com.pushandmotion.pamservices.data.TrackingData;
 
-import java.util.HashMap;
-import java.util.Map;
-
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 

@@ -76,7 +76,25 @@ Clien SDK to access PAM
         PAM.trackPageView(pageName, data);
     }
     ```
-  
+    
+1. Make Form Submit
+When you receive form submission from your website, you can forward those form data to PAM by calling submitForm method
+
+    ```java
+     import com.pushandmotion.pamservices.PAM;
+     import com.pushandmotion.pamservices.data.Form;
+    ```
+
+    ```java
+     String formId = "1234";
+     Form form = new Form(formId);
+
+     form.add("email" , "customerEmail@gmail.com");
+     form.add("line_id" , "customerLineID");
+
+     PAM.submitForm(form);
+    ```
+
  1. If you want to tracking the custom data field you can using the code below.
  
     ```java
