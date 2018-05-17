@@ -2,8 +2,7 @@ package com.pushandmotion.pam;
 
 import android.app.Application;
 
-import com.pushandmotion.pamservices.PAM;
-import com.pushandmotion.pamservices.core.PAMClient;
+import com.pushandmotion.pamservices.*;
 
 /**
  * Created by heart on 8/7/2017 AD.
