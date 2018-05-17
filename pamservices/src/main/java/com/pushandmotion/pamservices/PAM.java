@@ -3,6 +3,7 @@ package com.pushandmotion.pamservices;
 import android.content.Context;
 
 import com.pushandmotion.pamservices.core.PAMClient;
+import com.pushandmotion.pamservices.data.Form;
 import com.pushandmotion.pamservices.data.PAMLocalDataBase;
 import com.pushandmotion.pamservices.data.TrackingData;
 
@@ -93,4 +94,8 @@ public class PAM {
         pam.trackPageView(data, cuttomFields);
     }
 
+    public static void submitForm(Form form){
+        TrackingData data = defaultTrackingData().clone().setPageTitle(form.getFormId()+"/submit").build();
+        pam.trackPageView(data, form.getFormDataAsMap() );
+    }
 }

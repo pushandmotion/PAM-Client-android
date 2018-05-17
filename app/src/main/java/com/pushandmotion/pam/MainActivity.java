@@ -7,7 +7,11 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.pushandmotion.pamservices.PAM;
+import com.pushandmotion.pamservices.data.Form;
 import com.pushandmotion.pamservices.data.TrackingData;
+
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -29,11 +33,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         textUPDFH = (EditText)findViewById(R.id.textUPDFH);
         trackBTN.setOnClickListener(this);
         updfhBTN.setOnClickListener(this);
-       /* TrackingData data = PAM.createTackingDataBuilder()
+
+
+        //---- Track Pageview
+        TrackingData data = PAM.createTackingDataBuilder()
                 .setPageUrl("tesco://app-id/home")
                 .build();
+        PAM.trackPageView("Home", data);
+        //------- Track Pageview
 
-        PAM.trackPageView("Home", data);*/
+        //===================================
+
+        //---- Submit Form ----
+        String formId = "1234";
+        Form form = new Form(formId);
+
+        form.add("email" , "customerEmail@gmail.com");
+        form.add("line_id" , "customerLineID");
+
+        PAM.submitForm(form);
+        //---- Submit Form ----
 
     }
 
