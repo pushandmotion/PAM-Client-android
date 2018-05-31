@@ -108,7 +108,7 @@ public class PAMClient {
         formBuilder.add("fingerprint", data.getFingerPrint() );
 
 
-        String url = createEventURL("/mtc/event");
+        String url = createEventURL("rest/event");
 
         Request request = new Request.Builder()
                 .url( url )
