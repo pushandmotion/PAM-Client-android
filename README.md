@@ -5,29 +5,28 @@ Clien SDK to access PAM
 
  * Mimimum Android SDK version 15
 
-## Installation
+## Install PAM client for android via Gradle.
 
- 1. Download pamservices.aar from lastes release
+ 1. Add PAM maven repository to your project-level build.gradle file.
 
     ```
-    https://github.com/pushandmotion/PAM-Client-android/releases/tag/1.0
+    repositories {
+        ....
+        maven {
+            url 'https://android-repo.pushandmotion.com/artifactory/pam-maven/'
+        }
+        ....
+    }
     ```
-    
- 1. create new module in Android Studio
- ![create new module](https://raw.githubusercontent.com/pushandmotion/PAM-Client-android/master/readme_image/new_module.png)
-
- 1. Choose import .Jar/.Arr Package
+ 1. Open your module-level build.gradle file and add PAM to dependencies
  
- ![import arr](https://raw.githubusercontent.com/pushandmotion/PAM-Client-android/master/readme_image/import.png)
- 
- 1. Then click Next button and browse to pamservices.aar file
- 
- 1. Open Module Setting for app project.
- 
- 1. Add pamservices to Module Dependency
- 
- ![add pamservice to module dependency](https://raw.githubusercontent.com/pushandmotion/PAM-Client-android/master/readme_image/dependency.png)
- 
+  ```
+  dependencies {
+    ...
+    implementation 'com.pushandmotion:pamservices:1.1.1'
+    ...
+  }
+  ```
 
 ## initialize PAM client in MainApplication.java
  
@@ -69,12 +68,12 @@ protected void onCreate(Bundle savedInstanceState) {
             .setPageUrl("appscheme://myscheme/home")
             .build();
     
-    String pageName = "home";
-    PAM.trackPageView(pageName, data);
+    String pageTitle = "example application title";
+    PAM.trackPageView(pageTitle, data);
 }
 ```
 
-## Make Form Submit. 
+## Make a Form Submit. 
 
 ### When you receive form submission from your app, you can forward those form data to PAM by calling submitForm method
 
