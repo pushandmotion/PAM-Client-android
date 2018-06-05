@@ -68,7 +68,7 @@ protected void onCreate(Bundle savedInstanceState) {
             .setPageUrl("appscheme://myscheme/home")
             .build();
     
-    String pageTitle = "example application title";
+    String pageTitle = "sample application title";
     PAM.trackPageView(pageTitle, data);
 }
 ```
