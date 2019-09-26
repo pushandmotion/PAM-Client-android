@@ -1,3 +1,6 @@
+# PLEASE NOTE, THIS SDK IS NO LONGER BEING MAINTAINED
+## use the new version of SDK visit https://pushandmotion.com
+
 # PamSdk-Android
 Clien SDK to access PAM
 
